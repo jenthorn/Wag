@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WAG</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="//use.typekit.net/biz3nqk.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+
+<div class="container">
+	<header class="intro">
+		<!-- beginning of flickity gallery -->
+
+		<div class="gallery">
+		  <div class="gallery-cell">
+		  	<img src="images/dog0.png" alt="person and dog">
+		  </div>
+		  <div class="gallery-cell">
+		  	<img src="images/dog1.png" alt="person and dog">
+		  </div>
+		  <div class="gallery-cell">
+		  	<img src="images/dog2.png" alt="person and dog">
+		  </div>
+		</div>
+
+		<div class="headline">
+			<div class="wrapper">
+				<img src="images/wagLogoBig.png" id="logo" alt="logo">
+				<h1>Wag</h1>
+				<form action="">
+					<h2>Find your new best fur friend</h2>
+					<input type="text" placeholder="enter postal code" class="location" required>
+					<!--drop down select menus to select size and age of dog -->
+					<label for="activities">What will you and your new friends favourite activity be?</label>
+					<select name="size" id="size">
+						<option value="L">All things out doors. I love to run!</option>
+						<option value="S">Only the best cuddles.</option>
+						<option value="M">Wandering around, and hanging out with other buds.</option>
+						<option value="XL">I've got extra large plans for my extra large bud!</option>
+					</select>
+
+					<label for="age">What would we find you up to on an average Saturday?</label>
+					<select name="age" id="age">
+						<option value="senior">Reading classic literature.</option>
+						<option value="baby">Working from home.</option>
+						<option value="young">Running errands, and hitting up my favourite farmers market.</option>
+						<option value="adult">Working on the farm.</option>
+					</select>
+
+					<input type="submit" value="wag on!" class="submitButton" id="submit">
+				</form>
+			</div>
+		</div>	
+
+	</header>
+
+	<section class="results">
+		<div class="topBar">
+			<div class="wrapper">
+				<img src="images/Untitled-2.png" alt="dog logo">
+			</div>
+		</div>	
+		<ul class="deck"></ul>
+		<!-- tinder swipe library -->
+		<input type="submit" value="Click to meet your new fur friends!" class="view">	
+		<img src="images/swipeIcon.png" id="swipe" class="animated infinite wobble" alt="swipe icon">
+		<p class="swipe">wag right to like</p>	
+	</section>
+
+	<section class="choices">
+		<div class="topBar">
+			<div class="wrapper">
+				<img src="images/Untitled-2.png" alt="dog logo">
+			</div>
+		</div>	
+		<h2>Meet your fur friends!</h2>
+			<div class="wrapper faveddogs">
+			<!-- this is where all the swiped right photos show more info -->
+			</div>
+	</section>
+</div>
+
+<footer class="thanks">
+	<div class="wrapper">
+		<p>Thank you for using Wag</p>
+		<p>Powered by PetFinder, and love.</p>
+		<p><img src="images/dogFavicon.png"> Icon created by: B Mijnlieff</p>
+		<p><img src="images/swipeIconFav.png"> Icon created by: Chris Dawson</p>
+	</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src='js/jquery.jTinder.js'></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
+<script src="js/jquery.transform2d.js"></script>
+<script src="js/app-dist.js"></script>
+</body>
+</html>
